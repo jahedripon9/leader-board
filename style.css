@@ -230,7 +230,7 @@ h2 p {
 
 /* mobile devices */
 @media only screen and (max-width: 688px) {
-  .container {
+    nav .container {
     width: 100%;
   }
   .players,
