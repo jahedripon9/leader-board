@@ -15,6 +15,7 @@ main {
   width: 870px;
   padding: 30px;
   margin-top: 21px;
+  box-shadow: 1px 1px 15px -2px rgb(0 0 0 / 20%);
 }
 hr {
   margin-top: 30px;
@@ -27,9 +28,11 @@ hr {
     top: 410px; */
 }
 nav {
-  width: 1440px;
+  width: 1257px;
   height: 94px;
   background: #562eff;
+  border-radius: 10px;
+  box-shadow: 1px 1px 15px -2px rgb(0 0 0 / 20%);
 }
 
 .main-menu {
