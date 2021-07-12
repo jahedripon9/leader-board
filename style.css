@@ -71,16 +71,18 @@ nav {
 
 /* ----- Top player Style-----  */
 .section-title {
-  color: #562eff;
-  font-size: 24px;
-  line-height: 36px;
-  font-weight: 500;
-  margin-top: 3px;
+    color: #562eff;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-top: 3px;
+    margin-left: 33px;
 }
 .players {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-row-gap: 30px;
+  margin-left: 30px;
 }
 .player {
   display: flex;
@@ -98,9 +100,10 @@ nav {
 }
 /* ----- Top Blogs Start ----- */
 .blogs {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 30px;
+    margin-left: 23px;
 }
 .blog {
   display: flex;
@@ -131,10 +134,10 @@ nav {
 
 /* Latest Course start */
 .courses {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  /* grid-column-gap: 50px;
-     */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-column-gap: 50px; */
+    margin-left: 30px;
 }
 .course-items {
   width: 226.42px;
@@ -235,11 +238,9 @@ h2 p {
 
 @media only screen and (max-width: 688px) {
     .header-section .container {
-    width: 100%;
+    max-width: 100%;
   }
-  .players,
-  .blogs,
-  .courses {
+  .players, .blogs, .courses {
     grid-template-columns: repeat (1, 1fr);
   }
   .player,
