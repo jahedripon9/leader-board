@@ -103,6 +103,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 30px;
+    grid-column-gap: 13px;
     margin-left: 23px;
 }
 .blog {
@@ -236,15 +237,339 @@ h2 p {
 
 /* mobile devices */
 
-@media only screen and (max-width: 688px) {
-    .header-section .container {
-    max-width: 100%;
+/* ----------- Moto 360 Watch ----------- */
+@media 
+  (max-device-width: 218px)
+  and (max-device-height: 281px) { 
+    main, .container, nav, .main-menu, .players, .blogs, .courses, .footer-section {
+        max-width: 100%;
+        
+    }
+    .courses, .blogs, .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{    
+        display: flex;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon img {
+            width: 35%;
+            height: 7%;
+        }
+
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 568px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    main, .container, nav, .main-menu, .players, .blogs, .courses, .footer-section {
+        max-width: 100%;
+        
+    }
+    .courses, .blogs, .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{    
+        display: flex;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon img {
+            width: 35%;
+            height: 7%;
+        }
+
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
   }
-  .players, .blogs, .courses {
-    grid-template-columns: repeat (1, 1fr);
-  }
-  .player,
-  .blog {
-    flex-direction: column;
-  }
+
+  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+    main, .container, nav, .main-menu, .players, .blogs, .courses, .footer-section {
+        max-width: 100%;
+        
+    }
+    .courses, .blogs, .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{    
+        display: flex;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon img {
+            width: 35%;
+            height: 7%;
+        }
+
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+
+}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 414px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    main, .container, nav, .main-menu, .players, .blogs, .courses, .footer-section {
+        max-width: 100%;
+        
+    }
+    .courses, .blogs, .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{    
+        display: flex;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon img {
+            width: 35%;
+            height: 7%;
+        }
+
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    main, .container, nav, .main-menu, .players, .blogs, .courses, .footer-section {
+        max-width: 100%;
+        
+    }
+    .courses, .blogs, .players{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{    
+        display: flex;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon img {
+            width: 35%;
+            height: 7%;
+        }
+
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+
+}
+
+/* ----------- Windows Phone ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 480px) 
+  and (device-height: 800px) {
+    main, .container, nav, .main-menu, .players, .blogs, .courses, .footer-section {
+        max-width: 100%;
+        
+    }
+    .courses, .blogs, .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{    
+        display: flex;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon img {
+            width: 35%;
+            height: 7%;
+        }
+
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+
+}
+/* ----------- iPad 1, 2, Mini and Air ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    main, .container, nav, .main-menu, .players, .blogs, .courses, .footer-section {
+        max-width: 100%;
+        
+    }
+    .courses, .blogs, .players{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{    
+        display: flex;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon img {
+            width: 15%;
+            height: 7%;
+        }
+
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+}
+
+/* ----------- Nexus 7 ----------- */
+
+/* Portrait and Landscape */
+@media screen 
+  and (device-width: 601px) 
+  and (device-height: 906px) 
+  and (-webkit-min-device-pixel-ratio: 1.331) 
+  and (-webkit-max-device-pixel-ratio: 1.332) {
+    main, .container, nav, .main-menu, .players, .blogs, .courses, .footer-section {
+        max-width: 100%;
+        
+    }
+    .courses, .blogs, .players{
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{    
+        display: flex;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon img {
+            width: 50%;
+            height: 7%;
+        }
+
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
+
+}
+
+/* ----------- Kindle Fire HD 7" ----------- */
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 800px) 
+  and (max-device-width: 1280px) 
+  and (-webkit-min-device-pixel-ratio: 1.5) {
+
+    main, .container, nav, .main-menu, .players, .blogs, .courses, .footer-section {
+        max-width: 100%;
+        
+    }
+    .courses, .blogs, .players{
+        grid-template-columns: repeat(2, 2fr);
+    }
+    .blog {
+        display: flex;
+        flex-direction: column;
+    }
+    .icon{    
+        display: flex;
+        margin-top: 1%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        }
+        .icon img {
+            width: 10%;
+            height: 7%;
+        }
+
+    .menu a:not(:first-child) {display: none;}
+    .menu a.icon {
+      float: right;
+      display: block;
+    }
 }
